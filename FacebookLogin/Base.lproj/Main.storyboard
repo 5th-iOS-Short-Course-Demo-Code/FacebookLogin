@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FacebookLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO5-6C-KOh">
+                                <rect key="frame" x="16" y="154" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrp-Fq-Qsz">
+                                <rect key="frame" x="16" y="185" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="birthday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGh-5K-OsO">
+                                <rect key="frame" x="16" y="216" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XGG-V8-MAN">
+                                <rect key="frame" x="122.5" y="10" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="XZQ-lr-Csu"/>
+                                    <constraint firstAttribute="width" constant="130" id="l38-9Q-KhA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9z-qq-ZHI">
+                                <rect key="frame" x="16" y="247" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XGG-V8-MAN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="B9Q-ex-JFE"/>
+                            <constraint firstItem="u9z-qq-ZHI" firstAttribute="top" secondItem="DGh-5K-OsO" secondAttribute="bottom" constant="5" id="DRg-1p-6JH"/>
+                            <constraint firstItem="TO5-6C-KOh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DVE-Fp-Lg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mrp-Fq-Qsz" secondAttribute="trailing" constant="16" id="FFr-df-njt"/>
+                            <constraint firstItem="DGh-5K-OsO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L0h-u1-Znm"/>
+                            <constraint firstItem="mrp-Fq-Qsz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NSC-XY-P1H"/>
+                            <constraint firstItem="XGG-V8-MAN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q7w-mc-TnB"/>
+                            <constraint firstItem="mrp-Fq-Qsz" firstAttribute="top" secondItem="TO5-6C-KOh" secondAttribute="bottom" constant="5" id="RWZ-5j-yD0"/>
+                            <constraint firstItem="TO5-6C-KOh" firstAttribute="top" secondItem="XGG-V8-MAN" secondAttribute="bottom" constant="14" id="W4E-Vj-dmE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u9z-qq-ZHI" secondAttribute="trailing" constant="16" id="Wp3-cC-nOR"/>
+                            <constraint firstItem="DGh-5K-OsO" firstAttribute="top" secondItem="mrp-Fq-Qsz" secondAttribute="bottom" constant="5" id="b02-PI-aYD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DGh-5K-OsO" secondAttribute="trailing" constant="16" id="t8U-Ln-zEI"/>
+                            <constraint firstItem="u9z-qq-ZHI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uh7-y4-L6f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TO5-6C-KOh" secondAttribute="trailing" constant="16" id="zA9-kr-5Vf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bdLabel" destination="DGh-5K-OsO" id="r1Z-H9-x1N"/>
+                        <outlet property="emailLabel" destination="mrp-Fq-Qsz" id="KaV-FA-xfZ"/>
+                        <outlet property="genderLabel" destination="u9z-qq-ZHI" id="fPq-Ia-OcS"/>
+                        <outlet property="nameLabel" destination="TO5-6C-KOh" id="SDY-DO-IAU"/>
+                        <outlet property="profileImageView" destination="XGG-V8-MAN" id="beV-lP-UQR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+</document>
